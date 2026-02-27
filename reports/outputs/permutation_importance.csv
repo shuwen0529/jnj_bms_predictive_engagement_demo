@@ -1,0 +1,14 @@
+feature,importance
+behavior_shift_30d,0.07253927185557965
+anomaly_score,0.042746342597712324
+policy_change_exposure,0.026812944064890074
+prior_case_flag,0.01443564521717067
+transactions_volume,0.014063626078215565
+operational_metric_index,0.011549920246535509
+policy_deviation_rate,0.002848941858711068
+prior_intervention_count_90d,0.0003408358346606681
+region,0.0001146739755663699
+entity_id,0.0
+month,0.0
+data_quality_score,-0.00015709784856787756
+segment,-0.000392381294351464
