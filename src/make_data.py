@@ -63,16 +63,16 @@ def main(out_path="data/raw/synthetic_entity_month.csv", n_entities=2000, months
                 "month": m,
                 "region": region,
                 "segment": segment,
-                "transactions_volume": float(transactions_volume),
-                "operational_metric_index": float(operational_metric_index),
-                "policy_change_exposure": int(policy_change_exposure),
-                "policy_deviation_rate": float(policy_deviation_rate),
-                "anomaly_score": float(anomaly_score),
-                "behavior_shift_30d": float(behavior_shift_30d),
-                "prior_case_flag": int(prior_case_flag),
-                "prior_intervention_count_90d": int(prior_intervention_count_90d),
+                "transactions_volume": float(transactions_volume),                  # operational context 
+                "operational_metric_index": float(operational_metric_index),        # operational context
+                "policy_change_exposure": int(policy_change_exposure),              # governance signals
+                "policy_deviation_rate": float(policy_deviation_rate),              # governance signals
+                "anomaly_score": float(anomaly_score),                              # behavioral signals 
+                "behavior_shift_30d": float(behavior_shift_30d),                    # behavioral signals 
+                "prior_case_flag": int(prior_case_flag),                            # historical context 
+                "prior_intervention_count_90d": int(prior_intervention_count_90d),  # historical context 
                 "data_quality_score": float(data_quality_score),
-                "downstream_event": int(downstream_event),
+                "downstream_event": int(downstream_event),                          # target: rare escalation event
             })
 
     df = pd.DataFrame(rows)
